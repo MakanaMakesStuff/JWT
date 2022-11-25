@@ -18,7 +18,7 @@ The way you store a JWT will mean different things for your web apps security. T
 
 - Header --- Will determine how our JWT signature will be generated
 - Payload(Claims) --- Contains the information about the user. This is trivially encoded and should NOT contain sensitive information, just what we need to validate a user and other options related to the token. i.e expiration date.
-- Signature is base64 encoded string of our header and payload.
+- Signature is base64 encoded string of our header and payload(Utilizes a secret key when generate on our server).
 
 ### Example
 ```typescript
