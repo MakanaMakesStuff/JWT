@@ -1,5 +1,5 @@
-### Json Web Tokens
-#### Importance
+## Json Web Tokens
+### Importance
 - allows for authentication by checking against a secret key on the server instead of using expensive database queries and other network operations.
 
 ### Security
@@ -13,7 +13,7 @@ The way you store a JWT will mean different things for your web apps security. T
 
 - it is important to note that when a token is created, we cannot magically or remotely change the expiration of these tokens, so to revoke privileges for a given token, we would have to make each token short lived and revalidate the token on each request or generate a new one if it is expired and the user still has permission to access the application. This seems to be the most ideal way of handling the revocation of user privileges.
 
-#### Structure
+### Structure
 `header.payload.signature`
 
 - Header --- Will determine how our JWT signature will be generated
