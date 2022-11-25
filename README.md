@@ -27,7 +27,7 @@ const jwt = new JWTModule()
 
 const payload: JWTModule.Payload = {
   username: "root",
-  password: "abc123",
+  email: "root@google.com",
 }
 
 const token = jwt.generate({ payload }) // Returns new JWT token
